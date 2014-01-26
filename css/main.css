@@ -136,6 +136,7 @@ html, body {
 .essay { 
 	height: 80%;
 	overflow-y: scroll;
+	margin-bottom: 10px;
 }
 
 .main-text footer {
