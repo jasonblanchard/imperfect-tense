@@ -134,12 +134,12 @@ html, body {
 }
 
 .essay { 
-	height: 70%;
+	height: 80%;
 	overflow-y: scroll;
 }
 
 .main-text footer {
-	height: 30%;
+	height: 20%;
 	overflow-y: scroll;
 }
 
@@ -153,15 +153,6 @@ html, body {
 	height: 100%;
 	overflow-y: scroll;
 }
-
-.footnote-text {
-}
-
-.footnote-text ol {
-	type: i;
-}
-
-
 
 
 
