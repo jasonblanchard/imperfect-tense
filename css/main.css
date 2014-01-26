@@ -111,19 +111,15 @@ html, body {
 }
 
 .page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -200px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
+	height: 100%;
 }
 
-.site-footer, .page-wrap:after {
-  /* .push must be the same height as footer */
-  height: 200px; 
+.main-content {
+	padding: 10px;
+	padding-top: 0;
+	height: 100%;
 }
+
 .site-footer {
   background: rgb(236, 235, 230);
   padding: 10px;
@@ -134,9 +130,19 @@ html, body {
 .main-text {
 	width: 70%;
 	float:left;
-	overflow-y: scroll;
-	height: 500px;
+	height: 100%;
 }
+
+.essay { 
+	height: 70%;
+	overflow-y: scroll;
+}
+
+.main-text footer {
+	height: 30%;
+	overflow-y: scroll;
+}
+
 
 .interjection-text {
 	width: 30%;
@@ -144,8 +150,8 @@ html, body {
 	font-family: 'Actor';
 	font-size: 15px;
 	color: rgb(95, 94, 94);
+	height: 100%;
 	overflow-y: scroll;
-	height: 500px;
 }
 
 .footnote-text {
@@ -155,10 +161,6 @@ html, body {
 	type: i;
 }
 
-.main-content {
-	overflow-y: scroll;
-	padding: 10px;
-}
 
 
 
