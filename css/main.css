@@ -110,6 +110,16 @@ html, body {
   height: 100%;
 }
 
+li {
+	margin-bottom: 20px;
+}
+
+section:before {
+	content: '#';
+	text-align: center; 
+	font-size: 23px;
+}
+
 .page-wrap {
 	height: 100%;
 }
