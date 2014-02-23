@@ -141,28 +141,64 @@ section:before {
 	width: 70%;
 	float:left;
 	height: 100%;
+	border-right: 1px solid rgb(212, 205, 205);
 }
 
 .essay { 
-	height: 80%;
+	height: 70%;
 	overflow-y: scroll;
 	margin-bottom: 10px;
+	font-size: 20px;
 }
 
 .main-text footer {
-	height: 20%;
+	height: 30%;
 	overflow-y: scroll;
+	border-top: 1px solid rgb(212, 205, 205);
 }
 
 
 .interjection-text {
-	width: 30%;
+	width: 29%;
 	float:left;
 	font-family: 'Actor';
 	font-size: 15px;
 	color: rgb(95, 94, 94);
 	height: 100%;
 	overflow-y: scroll;
+}
+
+.interjection-text li,
+.footnotes li {
+	padding: 4px;
+}
+
+sup a {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 0px;
+	border-radius: 2px;
+	text-align: center;
+	color: black;
+}
+
+sup a {
+	text-decoration :none;
+	font-weight: bold;
+}
+
+sup a:hover {
+	text-decoration: underline;
+}
+
+sup.fn a { 
+	background: rgb(159, 199, 234);
+	border: 1px solid rgb(137, 167, 193);
+}
+
+sup.intj a {
+	background: rgb(247, 182, 63);
+	border: 1px solid rgb(206, 152, 53)
 }
 
 

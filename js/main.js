@@ -4,7 +4,7 @@ $(document).ready(function() {
 	
 	// Add ids to interjection nodes
 	$('.interjection-text').find('ol li').each(function(index, vaue) {
-		$(this).attr('id', "intj-" + (index + 1))
+		$(this).attr('id', "intj-" + (index + 1));
 	});
 	
 	$('.footnotes').find('ol li').each(function(index, value) {
@@ -20,8 +20,9 @@ $(document).ready(function() {
 		var text = $(this).text();
 				
 		if ( !isNaN(parseInt(text)) ) {
-			$(this).attr('id', 'goto-intj-' + text)
-			$(this).data('goto', 'intj-' + text)
+			$(this).attr('id', 'goto-intj-' + text);
+			$(this).attr('class','intj');
+			$(this).data('goto', 'intj-' + text);
 		} else if (seeNoteRegex.test(text)) {
 			// Need to figure out if this is an fn or intj
 			matches = text.match(seeNoteRegex);
@@ -30,6 +31,7 @@ $(document).ready(function() {
 		} else {
 			var numeral = lookup.indexOf(text) + 1;
 			$(this).attr('id', 'goto-fn-' + numeral);
+			$(this).attr('class', 'fn');
 			$(this).data('goto', 'fn-' + numeral);
 		}
 		
@@ -47,7 +49,14 @@ $(document).ready(function() {
 			console.log(goToId);
 			
 			$(goToId)[0].scrollIntoView();
-			$(goToId).effect('highlight');
+			
+			var highlightColor;
+			if ( $(this).attr('class') == 'fn') {
+				highlightColor = 'rgb(159, 199, 234)';
+			} else {
+				highlightColor = 'rgb(247, 182, 63)';
+			}
+			$(goToId).effect('highlight', {color: highlightColor});
 		});
 	});
 });
