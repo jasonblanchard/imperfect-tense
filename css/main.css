@@ -191,18 +191,24 @@ sup a {
 	font-weight: bold;
 }
 
-sup a:hover {
-	text-decoration: underline;
+sup.fn a { 
+	background: rgb(219, 226, 232);
+	border: 1px solid rgb(180, 186, 191);
 }
 
-sup.fn a { 
+sup.fn a:hover {
 	background: rgb(159, 199, 234);
 	border: 1px solid rgb(137, 167, 193);
 }
 
 sup.intj a {
+	background: rgb(230, 208, 167);
+	border: 1px solid rgb(189, 166, 122);
+}
+
+sup.intj a:hover {
 	background: rgb(247, 182, 63);
-	border: 1px solid rgb(206, 152, 53)
+	border: 1px solid rgb(206, 152, 53);
 }
 
 
