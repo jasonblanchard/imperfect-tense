@@ -15,7 +15,8 @@ $(document).ready(function() {
 	$('sup').each(function(index, value) {
 		
 		// Regex to find the 'see n' notes
-		seeNoteRegex = /[a-z] (\d+)/i;
+		seeInterjectionRegex = /[a-z] (\d+)/i;
+		seeFootnoteRegex = /[a-z] (\w+)/i;
 		
 		var text = $(this).text();
 				
@@ -23,11 +24,17 @@ $(document).ready(function() {
 			$(this).attr('id', 'goto-intj-' + text);
 			$(this).attr('class','intj');
 			$(this).data('goto', 'intj-' + text);
-		} else if (seeNoteRegex.test(text)) {
-			// Need to figure out if this is an fn or intj
-			matches = text.match(seeNoteRegex);
+		} else if (seeInterjectionRegex.test(text)) {
+			matches = text.match(seeInterjectionRegex);
 			$(this).attr('id', 'goto-intj-' + matches[matches.length-1]);
+			$(this).attr('class','intj');
 			$(this).data('goto', 'intj-' + matches[matches.length-1])
+		} else if (seeFootnoteRegex.test(text)) {
+			matches = text.match(seeFootnoteRegex);
+			var numeral = lookup.indexOf(matches[matches.length-1]) + 1;
+			$(this).attr('id', 'goto-intj-' + numeral);
+			$(this).attr('class', 'fn');
+			$(this).data('goto', 'fn-' + numeral);
 		} else {
 			var numeral = lookup.indexOf(text) + 1;
 			$(this).attr('id', 'goto-fn-' + numeral);

@@ -173,9 +173,13 @@ section:before {
 	padding: 4px;
 }
 
+.footnotes {
+	color: rgb(95, 94, 94);
+}
+
 sup a {
 	padding-left: 2px;
-	padding-right: 2px;
+	padding-right: 1px;
 	padding-top: 0px;
 	border-radius: 2px;
 	text-align: center;
