@@ -14,6 +14,10 @@ $(document).ready(function() {
 	
 	$('sup').each(function(index, value) {
 		
+		if ($(this).attr('class') == 'no-note') {
+			return;
+		}
+		
 		// Regex to find the 'see n' notes
 		seeInterjectionRegex = /[a-z] (\d+)/i;
 		seeFootnoteRegex = /[a-z] (\w+)/i;

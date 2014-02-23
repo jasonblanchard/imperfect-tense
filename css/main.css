@@ -118,6 +118,7 @@ section:before {
 	content: '#';
 	text-align: center; 
 	font-size: 23px;
+	display: block;
 }
 
 .page-wrap {
@@ -174,7 +175,7 @@ section:before {
 }
 
 .footnotes {
-	color: rgb(95, 94, 94);
+	color: rgb(77, 77, 77);
 }
 
 sup a {
@@ -295,7 +296,7 @@ sup.intj a:hover {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
+.clearfix*,
 .clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
