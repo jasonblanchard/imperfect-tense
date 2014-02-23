@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 body {
-	font-family: 'Fanwood Text';
+	font-family: 'Crimson Text', serif;
 	font-size: 18px;
 }
 
@@ -162,7 +162,7 @@ section:before {
 .interjection-text {
 	width: 29%;
 	float:left;
-	font-family: 'Actor';
+	font-family: 'Actor', sans serif;
 	font-size: 15px;
 	color: rgb(95, 94, 94);
 	height: 100%;
@@ -180,21 +180,17 @@ section:before {
 
 sup a {
 	padding-left: 2px;
-	padding-right: 1px;
+	padding-right: 2px;
 	padding-top: 0px;
 	border-radius: 2px;
 	text-align: center;
-	color: black;
-}
-
-sup a {
+	color: rgb(79, 79, 79);
 	text-decoration :none;
-	font-weight: bold;
 }
 
 sup.fn a { 
-	background: rgb(219, 226, 232);
-	border: 1px solid rgb(180, 186, 191);
+	background: rgb(251, 251, 251);
+	border: 1px solid rgb(180, 181, 183);
 }
 
 sup.fn a:hover {
@@ -203,8 +199,8 @@ sup.fn a:hover {
 }
 
 sup.intj a {
-	background: rgb(230, 208, 167);
-	border: 1px solid rgb(189, 166, 122);
+	background: rgb(255, 244, 230);
+	border: 1px solid rgb(212, 204, 191);
 }
 
 sup.intj a:hover {
