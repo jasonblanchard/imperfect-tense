@@ -6,7 +6,7 @@ Start Apache:
 `sudo apachectl start`
 
 Clone the repository into your Apache webroot (`/Library/WebServer/Documents`)
-`https://github.com/jasonblanchard/imperfect-tense.git`
+`git clone https://github.com/jasonblanchard/imperfect-tense.git /Library/WebServer/Documents`
 
 Open a Web browser and visit http://localhost/imperfect_tense/.
 
